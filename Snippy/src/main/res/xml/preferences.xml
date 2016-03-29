@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!--
+	<PreferenceCategory android:title="@string/prefs_appllcation_title">
+		<ListPreference
+			android:key="appTheme"
+			android:title="@string/prefs_apptheme_title"
+			android:summary="@string/prefs_apptheme_summary"
+			android:entries="@array/prefs_apptheme_types"
+			android:entryValues="@array/prefs_apptheme_values"
+			android:dialogTitle="@string/prefs_apptheme_title"
+			android:defaultValue="light" />
+		
+	</PreferenceCategory>
+	-->
+	<PreferenceCategory android:title="@string/prefs_service">
+		<CheckBoxPreference
+			android:key="clipboardMonitoring"
+			android:title="@string/prefs_monitoring_title"
+			android:summary="@string/prefs_monitoring_summary"
+			android:defaultValue="false" />
+		<CheckBoxPreference
+			android:key="startOnBoot"
+			android:title="@string/prefs_autostart_title"
+			android:summary="@string/prefs_autostart_summary"
+			android:dependency="clipboardMonitoring"
+			android:disableDependentsState="false"
+			android:defaultValue="false" />
+
+		<ListPreference
+			android:key="historySize"
+			android:title="@string/prefs_history_title"
+			android:summary="@string/prefs_history_summary"
+			android:entries="@array/prefs_history_size"
+			android:entryValues="@array/prefs_history_values"
+			android:dialogTitle="@string/prefs_history_title"
+			android:dependency="clipboardMonitoring"
+			android:disableDependentsState="false"
+			android:defaultValue="10" />
+		
+	</PreferenceCategory>
+
+	<!--<PreferenceCategory android:title="@string/prefs_window_title">
+	</PreferenceCategory>-->
+	
+	<PreferenceCategory android:title="@string/prefs_notification_title">
+		<CheckBoxPreference
+			android:key="showNotification"
+			android:title="@string/prefs_notification_title"
+			android:summary="@string/prefs_notification_summary"
+			android:defaultValue="false" />
+
+		<!--<CheckBoxPreference
+			android:key="showNotificationIcon"
+			android:title="@string/prefs_notification_icon_title"
+			android:summary="@string/prefs_notification_icon_summary"
+			android:dependency="showNotification"
+			android:disableDependentsState="false"
+			android:defaultValue="true" />-->
+
+		<CheckBoxPreference
+			android:key="showFloatWindow"
+			android:title="@string/prefs_float_window_title"
+			android:summaryOff="@string/prefs_float_window_summary_off"
+			android:summaryOn="@string/prefs_float_window_summary_on"
+			android:defaultValue="false" />
+		<CheckBoxPreference
+			android:key="showFloatWindowRight"
+			android:title="@string/prefs_float_window_right_title"
+			android:summaryOff="@string/prefs_float_window_right_summary_off"
+			android:summaryOn="@string/prefs_float_window_right_summary_on"
+			android:dependency="showNotification"
+			android:disableDependentsState="false"
+			android:defaultValue="true" />
+		
+		<CheckBoxPreference
+			android:key="showNotificationTop"
+			android:title="@string/prefs_notification_top_title"
+			android:summary="@string/prefs_notification_top_summary"
+			android:dependency="showNotification"
+			android:disableDependentsState="false"
+			android:defaultValue="false" />
+		
+		<CheckBoxPreference
+			android:key="showPopupNotification"
+			android:title="@string/prefs_popup_notification_title"
+			android:summary="@string/prefs_popup_notification_summary"
+			android:defaultValue="false" />
+		
+	</PreferenceCategory>
+</PreferenceScreen>

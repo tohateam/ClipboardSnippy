@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:background="#455a64">
+
+		<LinearLayout
+			android:id="@+id/header_id"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal"
+			android:paddingLeft="10dp"
+			android:layout_weight="1.0">
+
+			<ImageButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:src="@drawable/ic_open_with_white_24dp"
+				android:id="@+id/float_id"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="right"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp">
+
+			<ImageButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:src="@drawable/ic_clear_all_white_24dp"
+				android:id="@+id/btn_clear_all"/>
+
+			<ImageButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:src="@drawable/ic_refresh_white_24dp"
+				android:id="@+id/btn_refresh_list"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="10dp"/>
+
+			<ImageButton
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:src="@drawable/ic_clear_white_24dp"
+				android:id="@+id/btn_close_window"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<ListView
+		android:id="@+id/listView1"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"/>
+
+</LinearLayout>
+

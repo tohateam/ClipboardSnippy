@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<style name="FloatingWindow" parent="android:Theme.Dialog">
+		<item name="android:background">@color/floatBackgroundColor</item>
+		<item name="android:textColor">@color/floatTextColor</item>
+	</style>
+	
+	<style name="DarkListView" parent="@android:style/Widget.ExpandableListView">
+		<item name="android:background">@color/floatListViewColor</item>
+		<item name="android:textColor">@color/floatTextColor</item>
+		<!--Размер разделителя-->
+		<item name="android:dividerHeight">2dp</item>
+		<!--Разделитель групп-->
+		<item name="android:divider">@color/floatBackgroundColor</item>
+		<!--Разделитель подгрупп-->
+		<item name="android:childDivider">@color/floatBackgroundColor</item>
+    </style>
+	
+</resources>

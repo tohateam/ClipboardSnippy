@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--Плавающее окно-->
+	<color name="floatBackgroundColor">#303F9F</color>
+	<color name="floatListViewColor">#FFFFFF</color>
+	<color name="floatTextColor">#000000</color>
+	<color name="floatBlockColor">#FB8C00</color>
+	
+	<color name="defaultText">#000000</color>
+	<color name="blockedText">#FF3D00</color>	
+	
+	<color name="title_background">#455a64</color>
+	<color name="focusedRow">#3D5AFE</color>
+	<color name="pressedRow">#FFB300</color>
+	<color name="defaultRow">#FFFFFF</color>
+	<color name="twoRow">#CCCCCC</color>
+	
+	
+</resources>

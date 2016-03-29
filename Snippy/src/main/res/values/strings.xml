@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Clipboard Snippy</string>
+
+	<string name="monitor_service_started">Clipboard monitoring service started</string>
+	<string name="monitor_service_stopped">Clipboard monitoring service stopped</string>
+
+	<string name="clip_copied">Clip copied</string>
+
+	<string name="edit_note">Edit note</string>
+	<string name="label_note">Label note</string>
+	<string name="body_note">Body note</string>
+	
+	<!--Menu-->
+	<string name="clear">Clear</string>
+	<string name="refresh">Refresh</string>
+	<string name="settings">Settings</string>
+	<string name="about">About</string>
+	<string name="save">Save</string>
+	<string name="cancel">Cancel</string>
+
+	<!--Popup Menu-->
+	<string name="note_item_edit">Edit</string>
+	<string name="note_item_block">Block</string>
+	<string name="note_item_delete">Delete</string>
+	
+	<string name="prefs_service">Service settings</string>
+	<string name="prefs_application">Application settings</string>
+	
+	<string name="prefs_monitoring_title">Clipboard monitoring</string>
+	<string name="prefs_monitoring_summary">Enable clipboard polling service.</string>
+	
+	<string name="prefs_autostart_title">Start on boot</string>
+	<string name="prefs_autostart_summary">Should the clipboard monitoring service be started when phone boots.</string>
+	
+	<!--Уведомления-->
+	<string name="tap_to_open">Tap to open</string>
+	
+	<string name="prefs_notification_title">Notifications</string>
+	<string name="prefs_notification_summary">When should the notification icon be shown.</string>
+	
+	<string name="prefs_notification_icon_title">Notifications icon</string>
+	<string name="prefs_notification_icon_summary">When should the notification icon be shown.</string>
+
+	<string name="prefs_notification_top_title">Notifications top</string>
+	<string name="prefs_notification_top_summary">When should the notification icon be shown.</string>
+
+	<string name="prefs_float_window_title">Action by pressing</string>
+	<string name="prefs_float_window_summary_on">Open the main window.</string>
+	<string name="prefs_float_window_summary_off">To open a floating window.</string>
+	
+	<!--Всплывающие уведомления-->
+	<string name="prefs_popup_notification_title">Show pop-up notifications</string>
+	<string name="prefs_popup_notification_summary">Enable show pop-up notifications.</string>
+	
+	<string name="prefs_history_title">History level</string>
+	<string name="prefs_history_summary">The number of clipboard items to store.</string>	
+
+	<!--Плавающее окно-->
+	<string name="prefs_window_title">Floating window</string>
+	
+	<string name="prefs_float_window_right_title">The position of the window</string>
+	<string name="prefs_float_window_right_summary_on">Display window on the right</string>
+	<string name="prefs_float_window_right_summary_off">Show the window on the left</string>
+
+	<!--Application Theme-->
+	<string name="prefs_appllcation_title">Global Settings</string>
+	<string name="prefs_apptheme_title">Application theme</string>
+	<string name="prefs_apptheme_summary">Exterior applications</string>	
+	
+</resources>

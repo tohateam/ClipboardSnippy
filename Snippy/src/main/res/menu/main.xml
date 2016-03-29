@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:title="@string/clear"
+		android:id="@+id/item_clear"
+		android:icon="@drawable/ic_clear_all_black_48dp"
+		android:showAsAction="ifRoom" />
+	<item
+		android:title="@string/refresh"
+		android:id="@+id/item_refresh"
+		android:icon="@drawable/ic_refresh_black_48dp"
+		android:showAsAction="ifRoom" />
+	<item
+		android:title="@string/settings"
+		android:id="@+id/settings"
+		android:icon="@drawable/ic_settings_black_48dp" />
+	<item
+		android:title="@string/about"
+		android:id="@+id/about"
+		android:icon="@drawable/ic_info_black_48dp" />
+</menu>

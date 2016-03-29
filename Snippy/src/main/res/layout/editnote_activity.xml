@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:padding="10dp">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:text="@string/label_note"
+			android:textSize="16.0sp"
+			android:textStyle="bold"
+			android:layout_weight="1.0"
+			android:gravity="center_vertical"/>
+
+		<CheckBox
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/blocked_note"
+			android:text="Blocked"/>
+
+	</LinearLayout>
+
+	<EditText
+		android:id="@+id/title_note"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:focusable="true"
+		android:layout_marginTop="10dp"/>
+
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/body_note"
+		android:textSize="16.0sp"
+		android:textStyle="bold"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"/>
+
+	<EditText
+		android:id="@+id/body_note"
+		android:layout_width="fill_parent"
+		android:layout_height="match_parent"
+		android:focusable="true"
+		android:minEms="5"
+		android:gravity="top|left"/>
+
+</LinearLayout>
+

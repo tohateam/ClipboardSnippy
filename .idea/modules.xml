@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ClipboardSnippy.iml" filepath="$PROJECT_DIR$/ClipboardSnippy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Snippy/Snippy.iml" filepath="$PROJECT_DIR$/Snippy/Snippy.iml" />
+    </modules>
+  </component>
+</project>

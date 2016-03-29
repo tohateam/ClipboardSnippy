@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="prefs_notification_types">
+		<item>Never</item>
+		<item>On clipboard change</item>
+		<item>Always</item>
+	</string-array>
+	<string-array name="prefs_notification_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	
+	<string-array name="prefs_history_size">
+		<item>10 items</item>
+		<item>20 items</item>
+		<item>30 items</item>
+		<item>40 items</item>
+		<item>50 items</item>
+	</string-array>
+	<string-array name="prefs_history_values">
+		<item>10</item>
+		<item>20</item>
+		<item>30</item>
+		<item>40</item>
+		<item>50</item>
+	</string-array>
+	
+	<string-array name="prefs_polling_interval">
+		<item>1 seconds</item>
+		<item>2 seconds</item>
+		<item>5 seconds</item>
+		<item>10 seconds</item>
+		<item>20 seconds</item>
+		<item>30 seconds</item>
+		<item>1 minute</item>
+	</string-array>
+	<string-array name="prefs_polling_interval_values">
+		<item>1000</item>
+		<item>2000</item>
+		<item>5000</item>
+		<item>10000</item>
+		<item>20000</item>
+		<item>30000</item>
+		<item>60000</item>
+	</string-array>
+	
+	<string-array name="prefs_apptheme_types">
+		<item>Light</item>
+		<item>Dark</item>
+	</string-array>
+	<string-array name="prefs_apptheme_values">
+		<item>light</item>
+		<item>dark</item>
+	</string-array>
+	
+</resources>

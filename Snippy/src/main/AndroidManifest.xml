@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="ua.tohateam.clipboardsnippy" >
+
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/edit_paste"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme" >
+
+		<service
+			android:name="ua.tohateam.clipboardsnippy.services.ClipboardMonitorService"
+			android:label="Clipboard monitor"
+			android:enabled="true"
+			android:exported="false" />
+		<service
+			android:name="ua.tohateam.clipboardsnippy.FloatingActivity"
+			android:label="Clipboard monitor"
+			android:enabled="true"
+			android:exported="false" />
+		
+		<receiver
+			android:name="ua.tohateam.clipboardsnippy.services.BootReceiver"
+			android:enabled="true"
+			android:exported="false"
+			android:label="BootReceiver">
+			<intent-filter>
+				<action
+					android:name="android.intent.action.BOOT_COMPLETED" />
+			</intent-filter>
+		</receiver>
+
+		<activity
+			android:name="ua.tohateam.clipboardsnippy.MainActivity"
+			android:label="@string/app_name"
+			android:launchMode="singleTop">
+		
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity
+			android:name="ua.tohateam.clipboardsnippy.SnippySettings"
+			android:label="@string/settings" />
+
+		<activity android:name="ua.tohateam.clipboardsnippy.EditClipActivity" />
+		
+		<service android:name="ua.tohateam.clipboardsnippy.connection.ServiceHelper" />
+		<activity
+			android:name="ua.tohateam.clipboardsnippy.connection.ActivityHelper"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:excludeFromRecents="true"
+			android:windowSoftInputMode="stateAlwaysHidden"
+			android:finishOnTaskLaunch="true"
+			android:configChanges="keyboard|keyboardHidden|navigation|orientation" />
+		
+
+	</application>
+
+</manifest>
