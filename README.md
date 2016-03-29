@@ -1,0 +1,2 @@
+# ClipboardSnippy
+Буфер обмена Андроид
